@@ -13,10 +13,10 @@ dependencies:
   flutter_amap_location:
     git:
       url: https://github.com/lianshuoshuo/flutter_amap_location.git
-      ref: main
+      ref: v0.0.1
 ```
 
-然后运行 `flutter pub get`。如需固定版本，可把 `ref` 换成已验证的提交 SHA。pub.dev 上已有同名包，请使用上面的 GitHub 地址。
+然后运行 `flutter pub get`。pub.dev 上已有同名包，请使用上面的 GitHub 地址。
 
 本地开发时可改用 `path: ../flutter_amap_location`，路径以实际检出目录为准。若从旧包名 `flutter_amap_position` 迁移，请更新依赖名、Dart 导入和下方的 iOS Podfile 路径。
 
