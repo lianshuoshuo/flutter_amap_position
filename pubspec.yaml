@@ -1,6 +1,6 @@
 name: flutter_amap_position
 description: Flutter plugin for one-shot and foreground location with the native AMap SDKs on Android, iOS and HarmonyOS NEXT.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/lianshuoshuo/flutter_amap_position
 
 environment:

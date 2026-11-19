@@ -1,3 +1,7 @@
+## 0.0.2
+
+- 将 pub.dev 包页面的仓库链接直接指向 `lianshuoshuo/flutter_amap_position`。
+
 ## 0.0.1
 
 - pub.dev 安装名为 `flutter_amap_position`。

@@ -10,7 +10,7 @@
 
 ```yaml
 dependencies:
-  flutter_amap_position: ^0.0.1
+  flutter_amap_position: ^0.0.2
 ```
 
 也可以运行 `flutter pub add flutter_amap_position`。本地开发时，在 `flutter_amap_position` 项下可改用 `path: ../flutter_amap_position`，路径以实际检出目录为准。

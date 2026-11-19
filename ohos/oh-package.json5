@@ -1,6 +1,6 @@
 {
   "name": "flutter_amap_position",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Foreground positioning via the native AMap Location SDK.",
   "main": "index.ets",
   "license": "MIT",

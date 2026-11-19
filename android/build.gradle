@@ -1,5 +1,5 @@
 group = "dev.hscw.flutter_amap_position"
-version = "0.0.1"
+version = "0.0.2"
 
 buildscript {
     repositories {
