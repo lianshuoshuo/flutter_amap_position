@@ -13,7 +13,7 @@ dependencies:
   flutter_amap_position: ^0.0.1
 ```
 
-也可以运行 `flutter pub add flutter_amap_position`。本地开发时，在 `flutter_amap_position` 项下可改用 `path: ../flutter_amap_location`，路径以实际检出目录为准。
+也可以运行 `flutter pub add flutter_amap_position`。本地开发时，在 `flutter_amap_position` 项下可改用 `path: ../flutter_amap_position`，路径以实际检出目录为准。
 
 从 GitHub 标签 `v0.0.1` 迁移时，把原来的 `flutter_amap_location` Git 依赖换成上面的 pub.dev 依赖，并更新 Dart 导入及下方的 iOS Podfile 路径。
 
