@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "flutter_amap_position_example"
+    },
+    {
+      "name": "location_reason",
+      "value": "示例需要在前台读取并显示手机位置。"
+    }
+  ]
+}

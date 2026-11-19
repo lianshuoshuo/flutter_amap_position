@@ -1,0 +1,50 @@
+group = "dev.hscw.flutter_amap_position"
+version = "0.0.1"
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.11.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.20"
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+
+android {
+    namespace = "dev.hscw.flutter_amap_position"
+    compileSdk = 36
+
+    defaultConfig {
+        minSdk = 24
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+    // Flutter's Android plugin loader includes :flutter_amap_map when the app
+    // uses it. Its AMap JAR already contains the same Location SDK classes.
+    if (rootProject.findProject(":flutter_amap_map") != null) {
+        implementation "com.amap.api:3dmap-location-search:11.2.100_loc11.2.100_sea9.8.1"
+    } else {
+        implementation "com.amap.api:location:11.2.100"
+    }
+}

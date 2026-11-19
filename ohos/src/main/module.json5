@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "flutter_amap_position",
+    "type": "har",
+    "deviceTypes": ["default", "tablet"],
+    "requestPermissions": [
+      {"name": "ohos.permission.INTERNET"},
+      {"name": "ohos.permission.GET_NETWORK_INFO"}
+    ]
+  }
+}
