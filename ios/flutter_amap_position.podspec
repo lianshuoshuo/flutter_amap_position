@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name             = 'flutter_amap_position'
   s.version          = '0.0.1'
   s.summary          = 'Foreground positioning via the native AMap Location SDK.'
-  s.homepage         = 'https://github.com/lianshuoshuo/flutter_amap_position'
+  s.homepage         = 'https://github.com/lianshuoshuo/flutter_amap_location'
   s.license          = { :type => 'MIT', :file => '../LICENSE' }
   s.author           = 'flutter_amap_position contributors'
   s.source           = { :path => '.' }
