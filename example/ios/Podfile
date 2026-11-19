@@ -31,7 +31,7 @@ target 'Runner' do
   use_frameworks! :linkage => :static
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-  pod 'AMapLocation', :podspec => '.symlinks/plugins/flutter_amap_position/ios/sdk/AMapLocation.podspec.json'
+  pod 'AMapLocation', :podspec => '.symlinks/plugins/flutter_amap_location/ios/sdk/AMapLocation.podspec.json'
   target 'RunnerTests' do
     inherit! :search_paths
   end

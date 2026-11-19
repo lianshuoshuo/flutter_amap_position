@@ -1,6 +1,6 @@
 {
   "module": {
-    "name": "flutter_amap_position",
+    "name": "flutter_amap_location",
     "type": "har",
     "deviceTypes": ["default", "tablet"],
     "requestPermissions": [

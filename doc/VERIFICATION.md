@@ -1,6 +1,6 @@
 # 本地验证记录
 
-验证日期 2026-11-19。定位包为 `flutter_amap_position 0.0.1`，共装宿主依赖 pub.dev 已公开的 `flutter_amap_map 0.0.1`。该宿主由示例临时复制，联动逻辑见 [共装说明](COEXISTENCE.md)。
+验证日期 2026-11-19。当时定位包名为 `flutter_amap_position 0.0.1`，共装宿主依赖 pub.dev 已公开的 `flutter_amap_map 0.0.1`。该宿主由示例临时复制，联动逻辑见 [共装说明](COEXISTENCE.md)。
 
 ## Dart
 

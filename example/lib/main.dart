@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_amap_position/flutter_amap_position.dart';
+import 'package:flutter_amap_location/flutter_amap_location.dart';
 
 void main() => runApp(const LocationExample());
 

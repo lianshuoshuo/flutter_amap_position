@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:flutter_amap_position_example/main.dart';
+import 'package:flutter_amap_location_example/main.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
