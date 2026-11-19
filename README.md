@@ -1,4 +1,4 @@
-# flutter_amap_location
+# flutter_amap_position
 
 通过高德原生定位 SDK 获取手机位置。Android、iOS 和 HarmonyOS NEXT 共用 Dart API。应用自行申请系统权限。定位插件可以单独运行。需要显示地图、标记和轨迹时，可同时安装地图插件。 [flutter_amap_map](https://pub.dev/packages/flutter_amap_map)
 
@@ -6,19 +6,16 @@
 
 ## 安装
 
-在宿主的 `pubspec.yaml` 中添加 GitHub 依赖：
+在宿主的 `pubspec.yaml` 中添加下面的依赖，再运行 `flutter pub get`。
 
 ```yaml
 dependencies:
-  flutter_amap_location:
-    git:
-      url: https://github.com/lianshuoshuo/flutter_amap_location.git
-      ref: v0.0.1
+  flutter_amap_position: ^0.0.1
 ```
 
-然后运行 `flutter pub get`。pub.dev 上已有同名包，请使用上面的 GitHub 地址。
+也可以运行 `flutter pub add flutter_amap_position`。本地开发时，在 `flutter_amap_position` 项下可改用 `path: ../flutter_amap_location`，路径以实际检出目录为准。
 
-本地开发时可改用 `path: ../flutter_amap_location`，路径以实际检出目录为准。若从旧包名 `flutter_amap_position` 迁移，请更新依赖名、Dart 导入和下方的 iOS Podfile 路径。
+从 GitHub 标签 `v0.0.1` 迁移时，把原来的 `flutter_amap_location` Git 依赖换成上面的 pub.dev 依赖，并更新 Dart 导入及下方的 iOS Podfile 路径。
 
 本仓库的 [example](example/README.md) 已配置本地依赖。用标准 Flutter 运行 Android、iOS，用支持 HarmonyOS NEXT 的 Flutter SDK 运行鸿蒙。同一份示例 Dart 代码可以在三端启动。
 
@@ -44,7 +41,7 @@ dependencies:
 ```ruby
 use_frameworks! :linkage => :static
 flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
-pod 'AMapLocation', :podspec => '.symlinks/plugins/flutter_amap_location/ios/sdk/AMapLocation.podspec.json'
+pod 'AMapLocation', :podspec => '.symlinks/plugins/flutter_amap_position/ios/sdk/AMapLocation.podspec.json'
 ```
 
 **HarmonyOS NEXT** 在宿主 entry 的 `module.json5` 中声明 `ohos.permission.APPROXIMATELY_LOCATION` 和 `ohos.permission.LOCATION`，分别填写权限用途 `reason` 和 `usedScene.when: "inuse"`，由宿主请求授权。在工程的 `build-profile.json5` 产品配置里启用 `buildOption.strictMode.useNormalizedOHMUrl`。可直接参考 [示例权限配置](example/ohos/entry/src/main/module.json5) 和 [构建配置](example/ohos/build-profile.json5)。
@@ -54,7 +51,7 @@ pod 'AMapLocation', :podspec => '.symlinks/plugins/flutter_amap_location/ios/sdk
 宿主向用户展示含高德定位 SDK 内容的隐私政策，把用户的实际选择传给插件。拒绝时返回 `privacyNotAgreed`。接到同意后，插件按顺序更新高德隐私展示状态、同意状态，再设置 Key。初始化完成表示配置已交给 SDK，实际定位仍取决于权限、手机设置和 SDK 响应。
 
 ```dart
-import 'package:flutter_amap_location/flutter_amap_location.dart';
+import 'package:flutter_amap_position/flutter_amap_position.dart';
 
 await AMapLocation.initialize(
   apiKey: platformKey,

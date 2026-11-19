@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_amap_location/flutter_amap_location.dart';
+import 'package:flutter_amap_position/flutter_amap_position.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 const _channel = MethodChannel('dev.hscw.flutter_amap_position/location');

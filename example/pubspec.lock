@@ -54,7 +54,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_amap_location:
+  flutter_amap_position:
     dependency: "direct main"
     description:
       path: ".."

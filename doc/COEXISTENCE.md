@@ -9,7 +9,7 @@
 在宿主已完成系统权限授权、且 `markerPngBytes` 是有效 PNG 时，可用真实定位结果建立标记：
 
 ```dart
-import 'package:flutter_amap_location/flutter_amap_location.dart';
+import 'package:flutter_amap_position/flutter_amap_position.dart';
 import 'package:flutter_amap_map/flutter_amap_map.dart';
 
 // userConsent 是当前用户在宿主选择的结果。

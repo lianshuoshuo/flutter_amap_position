@@ -1,1 +1,1 @@
-rootProject.name = "flutter_amap_location"
+rootProject.name = "flutter_amap_position"

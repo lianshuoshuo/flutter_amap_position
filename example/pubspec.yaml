@@ -1,5 +1,5 @@
-name: flutter_amap_location_example
-description: A foreground positioning example for flutter_amap_location.
+name: flutter_amap_position_example
+description: A foreground positioning example for flutter_amap_position.
 publish_to: none
 version: 0.0.1+1
 
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_amap_location:
+  flutter_amap_position:
     path: ../
 
 dev_dependencies:
